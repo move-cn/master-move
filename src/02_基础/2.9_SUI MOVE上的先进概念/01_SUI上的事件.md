@@ -38,12 +38,12 @@ use sui::event;
 
 让我用代码来解释事件，首先，让我们创建我们的 `Hero` 对象。
 
-```rust
+```move
 module example::events {
 	use sui::object::{UID};
 
  //*Object representing our hero*
-	Struct Hero has key{
+	public struct Hero has key{
 		id: UID,
 		power: u8,
 		}
@@ -52,18 +52,18 @@ module example::events {
 
 现在让我们为我们的英雄创造一把剑。
 
-```rust
+```move
 module example::events {
 	use sui::object::{UID};
  
 	//*Object representing our hero*
-	Struct Hero has key, store{
+	struct Hero has key, store{
 		id: UID,
 		power: u8,
 	}
 	 
 	//*Object representing our hero's sword*
-	Struct Sword has key {
+	struct Sword has key {
 	id: UID
 	}
 
@@ -72,20 +72,20 @@ module example::events {
 
 现在我们就来创造一个买剑的乐趣吧。目前，为了保持示例简单，我不会使用英雄。
 
-```rust
+```move
 module example::events {
 	use sui::object::{UID};
 	use sui::tx_context::{Self, TxContext};
 	use sui::transfer;
  
 	//*Object representing our hero*
-	Struct Hero has key, store{
+	struct Hero has key, store{
 		id: UID,
 		power: u8,
 	}
 	 
 	//*Object representing our hero's sword*
-	Struct Sword has key {
+	struct Sword has key {
 	id: UID
 	}
 
@@ -105,25 +105,25 @@ module example::events {
 
 现在，如果我希望智能合约在有人购买剑时通知我怎么办？为此，我们将使用事件，让我引导您完成它们。
 
-```rust
+```move
 module example::events {
 	use sui::object::{UID};
 	use sui::tx_context::{Self, TxContext};
 	use sui::transfer;
  
 	// Object representing our hero
-	struct Hero has key, store{
+	public struct Hero has key, store{
 		id: UID,
 		power: u8,
 	}
 	 
 	// Object representing our hero's sword
-	struct Sword has key {
+	public struct Sword has key {
 		id: UID
 	}
 	
 	// Object representing an event
-	struct buySwordEvent has copy, drop {
+	public struct buySwordEvent has copy, drop {
 	  owner: address,
 	}
 

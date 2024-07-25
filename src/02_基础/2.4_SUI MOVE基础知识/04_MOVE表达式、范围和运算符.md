@@ -121,7 +121,7 @@ Sui Move 不允许你声明一个你不使用的变量，它会抛出一个错�
 
 考虑以下代码：
 
-```rust
+```move
 module examples::example {
 
 	fun add() {
@@ -132,7 +132,7 @@ module examples::example {
 
 这将引发错误，因为我们没有在其他任何地方使用 `sum` 。但是，如果将 `sum` 替换为 `_` ，如下所示，我们将不会收到错误。酷！！
 
-```rust
+```move
 module examples::example {
 
 	fun add() {

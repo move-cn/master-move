@@ -83,7 +83,7 @@ transfer::function_call(object, recipient)
 		use sui::tx_context::TxContext;
 
 		// Defining the SumObject
-		struct SumObject has key {
+		public struct SumObject has key {
 		    id: UID,
 		    number_1: u8,
 		    number_2: u8,

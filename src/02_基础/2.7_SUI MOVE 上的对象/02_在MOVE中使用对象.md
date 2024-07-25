@@ -52,7 +52,7 @@ module sum::sum {
 
 因此，可变引用与只读引用相反。可变引用允许您改变对象中的数据，并更改对象字段的数据。让我们看一个示例代码来了解可变引用的工作原理。
 
-```move rust
+```move
 module sum::sum {	
 		use sui::object;
 		use sui::tx_context::TxContext;

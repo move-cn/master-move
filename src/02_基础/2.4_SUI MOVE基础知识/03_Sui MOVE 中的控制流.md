@@ -18,13 +18,13 @@ if (<bool_expression>) {
 
 让我们看一个使用 `if` 表达式的实际示例：
 
-```rust
+```move
 module examples::if {
 	use sui::object::UID;
 	use sui::tx_context::{Self, TxContext};
 
 	// Declaring the ExampleObject
-	struct ExampleObject has key {
+	public struct ExampleObject has key {
 		id: UID,
 		num: u8,
 	}
@@ -55,13 +55,13 @@ module examples::if {
 
 您还可以单独使用 `if` - 不带 `else` 条件的 `if` 。以下是如何在代码中使用它。
 
-```rust
+```move
 module examples::if {
 	use sui::object::UID;
 	use sui::tx_context::{Self, TxContext};
 
 	// Declaring the ExampleObject
-	struct ExampleObject has key {
+	public struct ExampleObject has key {
 		id: UID,
 		num: u8,
 	}
@@ -112,7 +112,7 @@ module examples::assert {
 
 因此，正如我们之前告诉过您的那样，Move on Sui 不使用 for-while 循环，而是使用递归函数。递归函数不允许您无限次运行程序。它必然满足一定的条件并结束程序。让我们看看如何在 Move on Sui 中计算数字的阶乘。
 
-```rust
+```move
 module examples::assert {
 	fun factorial(n: u64): u64 {
 		if (n == 0) {

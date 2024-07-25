@@ -21,7 +21,7 @@ module dex::usdc {
 接下来，我们将定义名为 `USDC` 的结构。它是创造电流的一次性见证者。它具有掉落能力，因此无法转移或存储。
 
 ```rust
-struct USDC has drop {}
+public struct USDC has drop {}
 ```
 
 然后，我们创建一个 `init` 函数，该函数在创建模块时运行一次，并接受一次性 `witness` 作为第一个参数。
@@ -65,7 +65,7 @@ fun init(witness: USDC, ctx: &mut TxContext) {
 
 为了您的方便，这里是完整的代码。
 
-```rust
+```move
 module dex::usdc {
   use std::option;
 
@@ -80,7 +80,7 @@ module dex::usdc {
   // This struct has the drop ability so it cannot be transferred nor stored. 
   // It allows the Network to know it is a unique type
 
-  struct USDC has drop {}
+  public struct USDC has drop {}
 
   // The init function runs once on Module creation and accepts a one-time witness as the first argument
   // Witness is a struct with 1 ability, drop, it guarantees that there is only one in the entire network as you can only get it in the init function

@@ -71,7 +71,7 @@ module metaschool::pepe {
 
 完整的代码如下，您可以将其粘贴到在 Move Studio 中创建的文件中。
 
-```rust
+```move
 module metaschool::pepe{
     use std::option;
     use sui::coin;

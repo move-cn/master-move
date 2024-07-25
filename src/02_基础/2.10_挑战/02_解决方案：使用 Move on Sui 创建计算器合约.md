@@ -6,13 +6,13 @@
 
 计算器的完整代码是：
 
-```rust
+```move
 module calculator::calculator{
     use sui::object::{Self, UID};
     use sui::tx_context::{Self, TxContext};
     use sui::transfer;
 
-    struct Output has key, store{
+    public struct Output has key, store{
         id: UID,
         result: u64,
 
@@ -86,7 +86,7 @@ module calculator::calculator{
 - `use sui::transfer;` ：这会导入传输模块，使我们能够传输对象。
 
 ```rust
-    struct Output has key, store{
+   public struct Output has key, store{
         id: UID,
         result: u64,
 

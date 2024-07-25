@@ -62,7 +62,7 @@ module dex::dex {
 现在我们声明一个具有 drop 能力的 struct DEX，这种模式称为一次性见证模式（OTW）。 Move编程语言中的一次性见证（OTW）是一种特殊的结构体，用于控制某些资源的初始化或创建，确保此类操作只能执行一次。
 
 ```rust
-struct Data<phantom CoinType> has store {
+ public struct Data<phantom CoinType> has store {
     cap: TreasuryCap<CoinType>,
     faucet_lock: Table<address, u64>,
 }
@@ -72,7 +72,7 @@ struct Data<phantom CoinType> has store {
 - 它包含一个 `TreasuryCap` 和一个表（ `faucet_lock` ）来存储用户地址及其最后的铸造纪元。
 
 ```rust
-struct Storage has key {
+public struct Storage has key {
     id: UID,
     dex_supply: Supply<DEX>,
     swaps: Table<address, u64>,
@@ -543,7 +543,7 @@ fun transfer_coin<CoinType>(c: Coin<CoinType>, sender: address) {
 
 `dex.move` 的完整代码是：
 
-```rust
+```move
 module dex::dex {
   use std::option;
   use std::type_name::{get, TypeName};
@@ -571,14 +571,14 @@ module dex::dex {
 
   const EAlreadyMintedThisEpoch: u64 = 0;
 
-  struct DEX has drop {}
+  public struct DEX has drop {}
 
-  struct Data<phantom CoinType> has store {
+  public struct Data<phantom CoinType> has store {
     cap: TreasuryCap<CoinType>,
     faucet_lock: Table<address, u64>
   }
 
-  struct Storage has key {
+ public struct Storage has key {
     id: UID,
     dex_supply: Supply<DEX>,
     swaps: Table<address, u64>,

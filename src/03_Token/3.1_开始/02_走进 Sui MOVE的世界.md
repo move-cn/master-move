@@ -25,7 +25,7 @@ struct ExampleObject has key {
 
 我们在上一课程中详细介绍了 Move 合约的编写。让我们回顾一下“Hello World”示例代码。
 
-```rust
+```move
 // Copyright (c) 2022, Sui Foundation
 // SPDX-License-Identifier: Apache-2.0
 
@@ -40,7 +40,7 @@ module hello_world::hello_world {
     use sui::tx_context::{Self, TxContext};
 
     /// An object that contains an arbitrary string
-    struct HelloWorldObject has key, store {
+    public struct HelloWorldObject has key, store {
         id: UID,
         /// A string contained in the object
         text: string::String
@@ -84,7 +84,7 @@ use sui::tx_context::{Self, TxContext};
 
 ```rust
 /// An object that contains an arbitrary string
-struct HelloWorldObject has key, store {
+public struct HelloWorldObject has key, store {
     id: UID,
     /// A string contained in the object
     text: string::String

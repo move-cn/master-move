@@ -48,14 +48,14 @@ fun init(optional_parameter: anyDataType, ctx: &mut TxContext) {
 
 让我们看一个示例代码以更好地理解 `init` 。
 
-```rust
+```move
 module examples::init {
     use sui::transfer;
     use sui::object::{Self, UID};
     use sui::tx_context::{Self, TxContext};
 
     // Defining the ExampleObject
-    struct ExampleObject has key {
+    public struct ExampleObject has key {
         id: UID
     }
 
@@ -78,11 +78,11 @@ module examples::init {
 
 因此，我们已经介绍了 Move on Sui 合约的基本组成部分。这些并不是有助于在 Move on Sui 中构建合约的全部内容，但它是理解我们构建合约所需的基本概念的良好开端。完整的结构如下所示。
 
-```rust
+```move
 module package_name::module_name {
 		use sui::object::UID;
 
-		struct StructName has key {
+		public struct StructName has key {
 		    id: UID,
 		    // struct contents goes here
 		}
