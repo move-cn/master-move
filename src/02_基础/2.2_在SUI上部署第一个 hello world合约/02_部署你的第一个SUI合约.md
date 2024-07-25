@@ -28,7 +28,7 @@ P.S.：我正在使用Visual Studio IDE，因为它更好地可视化了我的�
 // Copyright (c) 2022, Sui Foundation
 // SPDX-License-Identifier: Apache-2.0
 
-/// A basic Hello World example for Sui Move, part of the Sui Move intro course:
+/// A basic Hello World example for move, part of the move intro course:
 /// https://github.com/sui-foundation/sui-move-intro-course
 /// 
 module hello_world::hello_world {

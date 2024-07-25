@@ -154,4 +154,4 @@ module example::events {
 
 ## quiz
 
-### 在Sui Move编程中，在智能合约中使用事件的目的是什么？
+### 在move编程中，在智能合约中使用事件的目的是什么？

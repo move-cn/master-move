@@ -10,7 +10,7 @@ Hello World程序的完整代码为：
 // Copyright (c) 2022, Sui Foundation
 // SPDX-License-Identifier: Apache-2.0
 
-/// A basic Hello World example for Sui Move, part of the Sui Move intro course:
+/// A basic Hello World example for move, part of the move intro course:
 /// https://github.com/sui-foundation/sui-move-intro-course
 /// 
 module hello_world::hello_world {
@@ -45,7 +45,7 @@ module hello_world::hello_world {
 ```rust
 // Copyright (c) 2022, Sui Foundation
 // SPDX-License-Identifier: Apache-2.0
-/// A basic Hello World example for Sui Move, part of the Sui Move intro course:
+/// A basic Hello World example for move, part of the move intro course:
 /// https://github.com/sui-foundation/sui-move-intro-course
 /// 
 ```
@@ -99,7 +99,7 @@ public entry fun mint(ctx: &mut TxContext) {
 
 ## 小结
 
-综上所述，我们分析了 Sui Move 中的“Hello World”程序，包括模块导入、结构体创建和函数定义。现在，您已准备好修改代码并进行实验。请记住，实践是学习的关键。快乐编码！
+综上所述，我们分析了 move 中的“Hello World”程序，包括模块导入、结构体创建和函数定义。现在，您已准备好修改代码并进行实验。请记住，实践是学习的关键。快乐编码！
 
 
 

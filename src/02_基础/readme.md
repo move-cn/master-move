@@ -4,32 +4,32 @@
 [基础](02_基础/readme.md)
   - [开始](02_基础/2.1_开始/readme.md)
     - [本章学习内容概述](02_基础/2.1_开始/01_我们今天做什么？.md)
-    - [SUI MOVE的诞生](02_基础/2.1_开始/02_为什么创建SUI上的MOVE语言.md)
+    - [move的诞生](02_基础/2.1_开始/02_为什么创建SUI上的MOVE语言.md)
 
  - [hello world](02_基础/2.2_在SUI上部署第一个%20hello%20world合约/readme.md)
    - [环境配置](02_基础/2.2_在SUI上部署第一个%20hello%20world合约/01_设置开发环境.md)
    - [合约部署](02_基础/2.2_在SUI上部署第一个%20hello%20world合约/02_部署你的第一个SUI合约.md)
    - [SUI钱包](02_基础/2.2_在SUI上部署第一个%20hello%20world合约/03_设置%20Sui%20钱包.md)
   
- - [SUI MOVE包结构](02_基础/2.3_SUI上的MOVE包结构/readme.md)
+ - [move包结构](02_基础/2.3_SUI上的MOVE包结构/readme.md)
    - [MOVE.toml和MOVE.lock](02_基础/2.3_SUI上的MOVE包结构/01_了解%20Move.toml%20和%20Move.lock%20文件.md)
    - [基本结构1](02_基础/2.3_SUI上的MOVE包结构/02_MOVE%20ON%20SUI%20的基本模块结构-1.md)
    - [基本结构2](02_基础/2.3_SUI上的MOVE包结构/03_Move%20on%20Sui%20的基本模块结构-2.md)
 
- - [SUI MOVE基础知识](02_基础/2.4_SUI%20MOVE基础知识/readme.md)
+ - [move基础知识](02_基础/2.4_SUI%20MOVE基础知识/readme.md)
    - [变量与常量的声明](02_基础/2.4_SUI%20MOVE基础知识/01_如何声明变量和常量？.md)
    - [数据类型](02_基础/2.4_SUI%20MOVE基础知识/02_数据类型.md)
-   - [SUI MOVE中的控制流](02_基础/2.4_SUI%20MOVE基础知识/03_Sui%20MOVE%20中的控制流.md)
+   - [move中的控制流](02_基础/2.4_SUI%20MOVE基础知识/03_Sui%20MOVE%20中的控制流.md)
    - [MOVE表达式](02_基础/2.4_SUI%20MOVE基础知识/04_MOVE表达式、范围和运算符.md)
 
- - [SUI MOVE函数](02_基础/2.5_SUI%20MOVE函数/readme.md)
+ - [move函数](02_基础/2.5_SUI%20MOVE函数/readme.md)
    - [函数基础知识](02_基础/2.5_SUI%20MOVE函数/01_函数基础知识.md)
    - [可见性说明符](02_基础/2.5_SUI%20MOVE函数/02_有哪些不同的可见性说明符？.md)
   
  - [能力类型](02_基础/2.6_SUI%20MOVE上具有能力的类型/readme.md)
    - [自定义类型与功能](02_基础/2.6_SUI%20MOVE上具有能力的类型/01_自定义类型和功能.md)
 
- - [SUI MOVE 对象](02_基础/2.7_SUI%20MOVE%20上的对象/readme.md)
+ - [move 对象](02_基础/2.7_SUI%20MOVE%20上的对象/readme.md)
    - [基础知识](02_基础/2.7_SUI%20MOVE%20上的对象/01_Move%20on%20Sui%20中的对象基础知识.md)
    - [使用](02_基础/2.7_SUI%20MOVE%20上的对象/02_在MOVE中使用对象.md)
    - [对象所有权](02_基础/2.7_SUI%20MOVE%20上的对象/03_对象所有权.md)

@@ -1,4 +1,4 @@
-# 走进 Sui MOVE的世界
+# 走进 move的世界
 
 大家好，我们很高兴您完成了 Sui 学习路径的前两门课程。在本课中，我们将对 Sui 和 Move 进行一些修改。我们知道您想立即开始编码，但是修改一些概念将帮助您轻松地编写代码。
 
@@ -9,7 +9,7 @@
 1.  单一所有者对象
 2.  共享所有者对象
 
-以下是在  Sui MOVE 中定义对象的方法。
+以下是在  move 中定义对象的方法。
 
 ```rust
 struct ExampleObject has key {
@@ -21,7 +21,7 @@ struct ExampleObject has key {
 
 注意：对象定义不定义对象的所有权。我们在初始化和转移所有权过程中定义它。
 
-## 回想一下，SUI MOVE中如何写合约
+## 回想一下，move中如何写合约
 
 我们在上一课程中详细介绍了 Move 合约的编写。让我们回顾一下“Hello World”示例代码。
 
@@ -29,7 +29,7 @@ struct ExampleObject has key {
 // Copyright (c) 2022, Sui Foundation
 // SPDX-License-Identifier: Apache-2.0
 
-/// A basic Hello World example for Sui Move, part of the Sui Move intro course:
+/// A basic Hello World example for move, part of the move intro course:
 /// https://github.com/sui-foundation/sui-move-intro-course
 /// 
 module hello_world::hello_world {
