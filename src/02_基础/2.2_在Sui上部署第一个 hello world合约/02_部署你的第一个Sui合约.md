@@ -1,4 +1,4 @@
-# 部署你的第一个SUI合约
+# 部署你的第一个Sui合约
 
 你在为 Move on Sui 设置开发环境方面做得非常出色。在本课中，我们将学习如何在 Sui 区块链上运行和部署“Hello World”智能合约，并在 Explorer 中进行探索。
 
@@ -99,7 +99,7 @@ sui client switch --address [YOUR_ADDRESS]
 
 ![deploy-6.png](https://github.com/0xmetaschool/Learning-Projects/blob/main/assests_for_all/assets_for_sui_c2/Deploy%20Your%20First%20Sui%20Contract/deploy-6.png?raw=true)
 
-最后，前往 [Sui Devnet faucet discord channel](https://discord.com/channels/916379725201563759/971488439931392130)并粘贴“！faucet [YOUR_ADDRESS]”以接收 10 个 SUI 代币。
+最后，前往 [Sui Devnet faucet discord channel](https://discord.com/channels/916379725201563759/971488439931392130)并粘贴“！faucet [YOUR_ADDRESS]”以接收 10 个 Sui 代币。
 
 ### 设置 dev 环境
 

@@ -239,7 +239,7 @@ module calculator::calculator{
 sui client switch --address [YOUR_ADDRESS]
 ```
 
-- 确保有足够的汽油。如果您没有，请前往 Sui Devnet faucet Discord 频道并粘贴“!faucet [YOUR_ADDRESS]”以接收 10 个 SUI 代币。
+- 确保有足够的汽油。如果您没有，请前往 Sui Devnet faucet Discord 频道并粘贴“!faucet [YOUR_ADDRESS]”以接收 10 个 Sui 代币。
 
 运行以下命令，以便我们可以在 Sui devnet 上部署：
 

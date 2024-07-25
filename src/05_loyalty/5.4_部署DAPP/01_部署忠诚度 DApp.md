@@ -33,7 +33,7 @@ dex = "0xa1dce324bcf781692a358adb27bd105844231d35863b5c99f94e54801d653788"
 Dex = { local = "/Users/username/Desktop/metaschool/Sui/dex-app/dex" }
 ```
 
-在 `[addresses]` ，你一定注意到我们使用的是 dex 合约地址。使用此地址并且不要更改它，因为该合约已经创建了一个池，该池需要运行 dex 和忠诚度 dApp 所需的 100 个 SUI 代币。如果您与创建的池有 dex 合约，请随意在此处使用它。
+在 `[addresses]` ，你一定注意到我们使用的是 dex 合约地址。使用此地址并且不要更改它，因为该合约已经创建了一个池，该池需要运行 dex 和忠诚度 dApp 所需的 100 个 Sui 代币。如果您与创建的池有 dex 合约，请随意在此处使用它。
 
 使用现有的合约地址将有助于忠诚度 dApp 不再发布 dex 合约，而是使用现有的已发布地址。
 
@@ -108,7 +108,7 @@ sui client publish --skip-dependency-verification --gas-budget 90000000
 
 ![output-2.png](https://github.com/0xmetaschool/Learning-Projects/blob/main/assests_for_all/sui-loyalty-dapp/Deploying%20the%20Loyalty%20DApp/output-2.png?raw=true)
 
-- 注意：如果您遇到“资金不足”错误，则可以前往 Sui Testnet faucet discord 频道并粘贴“!faucet [YOUR_ADDRESS]”以接收 10 个 SUI 代币。
+- 注意：如果您遇到“资金不足”错误，则可以前往 Sui Testnet faucet discord 频道并粘贴“!faucet [YOUR_ADDRESS]”以接收 10 个 Sui 代币。
 
 ###  步骤5
 

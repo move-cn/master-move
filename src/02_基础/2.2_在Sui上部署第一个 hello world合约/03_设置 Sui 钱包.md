@@ -36,11 +36,11 @@
 
 ## 获取一些测试代币
 
-您只需单击“请求 Devnet SUI 令牌”按钮即可请求 SUI 令牌。
+您只需单击“请求 Devnet Sui 令牌”按钮即可请求 Sui 令牌。
 
 ![Frame 3560370 (7).jpg](https://github.com/0xmetaschool/Learning-Projects/blob/main/assests_for_all/assets_for_sui_c2/Set%20Up%20Sui%20Wallet/Frame_3560370_(7).jpg?raw=true)
 
-注意：如果您需要 Testnet 等其他网络的 SUI 代币，只需更改网络并请求代币即可
+注意：如果您需要 Testnet 等其他网络的 Sui 代币，只需更改网络并请求代币即可
 
 ## 总结
 

@@ -1,4 +1,4 @@
-# 为什么创建SUI上的MOVE语言
+# 为什么创建Sui上的MOVE语言
 
 让我们从了解 Sui 开始， Sui上的MOVE语言 和 Move语言 之间的区别，以及为什么 Sui上的MOVE语言 是区块链中的游戏规则改变者
 

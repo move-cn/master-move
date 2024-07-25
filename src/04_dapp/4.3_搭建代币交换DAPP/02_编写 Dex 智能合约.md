@@ -21,7 +21,7 @@ module dex::dex {
   use std::option;
   use std::type_name::{get, TypeName};
   use sui::transfer;
-  use sui::sui::SUI;
+  use sui::sui::Sui;
   use sui::clock::{Clock};
   use sui::balance::{Self, Supply};
   use sui::object::{Self, UID};
@@ -97,7 +97,7 @@ public struct Storage has key {
       9,
       b"DEX",
       b"DEX Coin",
-      b"Coin of SUI DEX",
+      b"Coin of Sui DEX",
       option::none(),
       ctx
     );
@@ -287,7 +287,7 @@ public fun place_market_order(
 - 它返回一个包含生成的硬币的元组： `(eth_coin, usdc_coin, dex_coin)` 。
 
 ```rust
-  public fun create_pool(fee: Coin<SUI>, ctx: &mut TxContext) {
+  public fun create_pool(fee: Coin<Sui>, ctx: &mut TxContext) {
     clob::create_pool<ETH, USDC>(1 * FLOAT_SCALING, 1, fee, ctx);
   }
 ```
@@ -295,7 +295,7 @@ public fun place_market_order(
 - 该代码在合约上下文中定义了一个名为 `create_pool` 的公共函数。
 - 该函数负责使用 `clob::create_pool` 函数在Deep Book中创建一个池。
 - 它需要两个参数：
-  - `fee` ： `Coin<SUI>` 代表创建池所需支付的费用。
+  - `fee` ： `Coin<Sui>` 代表创建池所需支付的费用。
   - `ctx` ：对 `TxContext` 的可变引用，提供事务上下文信息。
 
  函数内部：
@@ -304,7 +304,7 @@ public fun place_market_order(
 - 创建的池将与 Sui Network 共享。
 - 池的刻度大小设置为 `1 USDC - 1e9` 。
 - 没有为池指定最小批量。
-- 创建池的费用指定为 `fee` 参数，即 `Coin<SUI>` 。
+- 创建池的费用指定为 `fee` 参数，即 `Coin<Sui>` 。
 - `1 * FLOAT_SCALING` 参数可能代表池中 ETH 和 USDC 的初始流动性或数量。
 - 该功能有助于创建池，允许用户在 Deep Book 平台上交易资产。
 
@@ -549,7 +549,7 @@ module dex::dex {
   use std::type_name::{get, TypeName};
 
   use sui::transfer;
-  use sui::sui::SUI;
+  use sui::sui::Sui;
   use sui::clock::{Clock};
   use sui::balance::{Self, Supply};
   use sui::object::{Self, UID};
@@ -594,7 +594,7 @@ module dex::dex {
             9, 
             b"DEX",
             b"DEX Coin", 
-            b"Coin of SUI DEX", 
+            b"Coin of Sui DEX", 
             option::none(), 
             ctx
         );
@@ -687,7 +687,7 @@ module dex::dex {
     (eth_coin, usdc_coin, dex_coin)
   }
   
-  public fun create_pool(fee: Coin<SUI>, ctx: &mut TxContext) {
+  public fun create_pool(fee: Coin<Sui>, ctx: &mut TxContext) {
 
     clob::create_pool<ETH, USDC>(1 * FLOAT_SCALING, 1, fee, ctx);
   }

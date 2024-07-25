@@ -66,7 +66,7 @@ sui client publish --skip-dependency-verification --gas-budget 90000000
 
 ![deploy-3.png](https://github.com/0xmetaschool/Learning-Projects/blob/ba2ce8dea0997931621928704f03f1a8483ecc0d/Build%20the%20Token%20Dex%20DApp/4.%20Deploy%20the%20DApp/assets/deploy-3.png?raw=true)
 
-- 注意：忽略所有警告并继续前进。但如果您遇到“资金不足”错误，那么您可以前往 [Sui Testnet faucet discord ](https://discord.com/channels/916379725201563759/1037811694564560966) 频道并粘贴“!faucet [YOUR_ADDRESS]”以接收 10 个 SUI 代币。
+- 注意：忽略所有警告并继续前进。但如果您遇到“资金不足”错误，那么您可以前往 [Sui Testnet faucet discord ](https://discord.com/channels/916379725201563759/1037811694564560966) 频道并粘贴“!faucet [YOUR_ADDRESS]”以接收 10 个 Sui 代币。
 
 前往 https://suiexplorer.com/?network=testnet。将交易摘要粘贴到搜索栏中，以在 Sui Explorer 上查找您的交易：
 
@@ -82,7 +82,7 @@ sui client publish --skip-dependency-verification --gas-budget 90000000
 
 ![pool-code.png](https://github.com/0xmetaschool/Learning-Projects/blob/ba2ce8dea0997931621928704f03f1a8483ecc0d/Build%20the%20Token%20Dex%20DApp/4.%20Deploy%20the%20DApp/assets/pool-code.png?raw=true)
 
-为了运行这些功能，我们的测试网钱包地址中需要 100 个 SUI 代币。即使是测试网帐户，也几乎不可能免费获得 100 个 SUI 代币。
+为了运行这些功能，我们的测试网钱包地址中需要 100 个 Sui 代币。即使是测试网帐户，也几乎不可能免费获得 100 个 Sui 代币。
 
 因此，为了解决这个问题，我们已经在以下地址为您创建了一个池。这是我们 DEX 合约的 Package ID
 
