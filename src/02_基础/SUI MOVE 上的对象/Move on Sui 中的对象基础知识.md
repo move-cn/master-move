@@ -35,13 +35,13 @@ struct SumObject has key {
 
 因此，要创建一个对象，我们必须使用我们在对象内部定义的值填充所有字段。为此，首先，我们需要为 `id` 分配一个值。由于 `UID` 定义了 `id` 的数据类型，因此我们需要用唯一的 ID 填充 `id` 。这就是 `sui::object` 和 `sui::tx_context` 模块派上用场的地方。 `sui::object` 帮助我们调用 `new()` 函数，该函数使用 `sui::tx_context` 给我们的值实例化新的 id。我们先看一个例子，然后我们会进一步理解这一点。
 
-```rust
+```move
 module sum::sum {
 		use sui::object;
 		use sui::tx_context::TxContext;
 
 		// Defining the SumObject
-		struct SumObject has key {
+		public struct SumObject has key {
 		    id: UID,
 		    number_1: u8,
 		    number_2: u8,
@@ -77,7 +77,7 @@ transfer::function_call(object, recipient)
 
 因此，为了获取当前的交易签名者，我们可以这样调用： `tx_context::sender(ctx)` 。让我们通过以下示例来了解传输模块的完整工作原理。
 
-```rust
+```move
  module sum::sum {
 		use sui::object;
 		use sui::tx_context::TxContext;

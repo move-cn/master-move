@@ -17,13 +17,13 @@
 
 只读引用仅允许您读取对象的数据。它不允许您更改或更新对象的数据。让我们举一个在上一课中使用的示例来阐明如何在代码中使用它。
 
-```rust
+```move
 module sum::sum {
 		use sui::object;
 		use sui::tx_context::TxContext;
 
 		// Defining the SumObject
-		struct SumObject has key {
+		public struct SumObject has key {
 		    id: UID,
 		    number_1: u8,
 		    number_2: u8,
@@ -52,13 +52,13 @@ module sum::sum {
 
 因此，可变引用与只读引用相反。可变引用允许您改变对象中的数据，并更改对象字段的数据。让我们看一个示例代码来了解可变引用的工作原理。
 
-```rust
+```move rust
 module sum::sum {	
 		use sui::object;
 		use sui::tx_context::TxContext;
 
 		// Defining the SumObject
-		struct SumObject has key {
+		public struct SumObject has key {
 		    id: UID,
 		    number_1: u8,
 		    number_2: u8,
@@ -80,13 +80,13 @@ module sum::sum {
 
 使用对象的第二种方法是将对象按值传递给 Move `entry` 函数。这使得对象不会存储在 Sui 存储中，代码可以决定对象应该存储在哪里。让我们看看 Move on Sui 中如何按值传递对象。
 
-```rust
+```move
 module sum::sum {	
 		use sui::object;
 		use sui::tx_context::TxContext;
 
 		// Defining the SumObject
-		struct SumObject has key {
+		public struct SumObject has key {
 		    id: UID,
 		    number_1: u8,
 		    number_2: u8,
@@ -122,13 +122,13 @@ let SumObject { id, number_1: _, number_2: _ } = object;
 
 在这里，我们解压了该对象，并使用 `_` 使 `number_1` 和 `number_2` 值不含任何数据。由于我们无法释放 `id` 字段，因此我们需要一些额外的帮助。我们使用 `object::delete` 函数删除 `UID` 并释放空间。请记住，您只能删除定义该对象的模块内部的对象。现在让我们看一下完整的编码示例。
 
-```rust
+```move
 module sum::sum {	
 		use sui::object;
 		use sui::tx_context::TxContext;
 
 		// Defining the SumObject
-		struct SumObject has key {
+		public struct SumObject has key {
 		    id: UID,
 		    number_1: u8,
 		    number_2: u8,
