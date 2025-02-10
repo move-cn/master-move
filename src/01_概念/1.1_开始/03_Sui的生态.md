@@ -28,21 +28,13 @@ DeFi:想要在Sui中构建DeFi应用程序的开发人员可以轻松使用许�
 
 现在，让我们来看看一些在Sui上已经建成的和正在建造的令人惊叹的产品
 
-游戏:让我们看看一些与Sui合作并在Sui区块链上发布游戏的游戏工作室。
 
-- Arcade Champions
-- [PanzerDogs](https://play.panzerdogs.io/)
-- [Worlds Beyond](https://worldsbeyondnft.com/)
-- Run Legends by [Talofa Games](https://www.talofagames.com/)
-- Cosmocadia by [Lucky Kat](https://www.lucky-kat.com/)
 
 DAPPs:现在，让我们探索一些基于Sui构建的dapp。
 
 - [SuiNS](https://suins.io/): Naming service dApp
 - [Typus](https://typus.finance/): DeFi Protocol
-- [Suia](https://suia.io/): Social dApp
 - [Cetus](https://www.cetus.zone/): DeFi
-- [Clutchy](https://clutchy.io/marketplace): NFT Marketplace
 - [SuiScan](https://suiscan.xyz/mainnet/home): Sui Block Explorer
 
 
